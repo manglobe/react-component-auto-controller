@@ -1,4 +1,4 @@
-#react-component-auto-controller
+# react-component-auto-controller
 [![npm package][npm-badge]][npm]
 
 `An easy way to create controlled-component & uncontrolled-component`
