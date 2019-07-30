@@ -1,0 +1,34 @@
+{
+  "name": "react-component-auto-controller",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "version": "1.0.0",
+  "scripts": {
+    "build": " npm run build:es && npm run build:lib",
+    "build:es": "cross-env NODE_ENV=es npx babel src --out-dir es --extensions \".js,.jsx,.ts,.tsx\"",
+    "build:lib": "cross-env NODE_ENV=lib npx babel src --out-dir lib --extensions \".js,.jsx,.ts,.tsx\""
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-react-constant-elements": "^7.5.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.23",
+    "cross-env": "^5.2.0",
+    "react": "^16.8.6",
+    "typescript": "^3.5.3"
+  },
+  "author": "manglobe",
+  "homepage": "https://github.com/manglobe/react-component-auto-controller",
+  "license": "MIT",
+  "keywords": [
+    "react-hoc"
+  ]
+}
